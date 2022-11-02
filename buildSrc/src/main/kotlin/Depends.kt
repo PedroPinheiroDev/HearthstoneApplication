@@ -6,6 +6,7 @@ import Versions.ESPRESSO_VERSION
 import Versions.JUNT_VERSION
 import Versions.LIFECYCLE_RUNTIME_VERSION
 import Versions.TEST_JUNIT_VERSION
+import Versions.RETROFIT_VERSION
 
 object Depends {
     val core_ktx by lazy { "androidx.core:core-ktx:${CORE_KTX_VERSION}" }
@@ -20,4 +21,5 @@ object Depends {
     val compose_ui_test by lazy { "androidx.compose.ui:ui-test-junit4:$COMPOSE_UI_VERSION" }
     val compose_ui_tooling by lazy { "androidx.compose.ui:ui-tooling:$COMPOSE_UI_VERSION" }
     val compose_ui_manifest by lazy { "androidx.compose.ui:ui-test-manifest:$COMPOSE_UI_VERSION" }
+    val retrofit by lazy { "com.squareup.retrofit2:retrofit:$RETROFIT_VERSION" }
 }

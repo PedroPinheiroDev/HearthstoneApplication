@@ -7,4 +7,5 @@ object Versions {
     const val JUNT_VERSION = "4.13.2"
     const val TEST_JUNIT_VERSION = "1.1.3"
     const val ESPRESSO_VERSION = "3.4.0"
+    const val RETROFIT_VERSION = "2.9.0"
 }

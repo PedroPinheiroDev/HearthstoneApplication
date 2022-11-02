@@ -16,3 +16,4 @@ rootProject.name = "HearthstoneApplication"
 include ':app'
 include ':designsystem'
 include ':onboarding'
+include ':cards_list'
