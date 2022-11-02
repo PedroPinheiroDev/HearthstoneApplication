@@ -4,6 +4,7 @@ import Versions.COMPOSE_UI_VERSION
 import Versions.CORE_KTX_VERSION
 import Versions.ESPRESSO_VERSION
 import Versions.JUNT_VERSION
+import Versions.KOIN_CORE_VERSION
 import Versions.LIFECYCLE_RUNTIME_VERSION
 import Versions.TEST_JUNIT_VERSION
 import Versions.RETROFIT_VERSION
@@ -22,4 +23,7 @@ object Depends {
     val compose_ui_tooling by lazy { "androidx.compose.ui:ui-tooling:$COMPOSE_UI_VERSION" }
     val compose_ui_manifest by lazy { "androidx.compose.ui:ui-test-manifest:$COMPOSE_UI_VERSION" }
     val retrofit by lazy { "com.squareup.retrofit2:retrofit:$RETROFIT_VERSION" }
+    val gson by lazy { "com.squareup.retrofit2:converter-gson:$RETROFIT_VERSION" }
+    val koin_core by lazy { "io.insert-koin:koin-core:$KOIN_CORE_VERSION" }
+    val koin_android by lazy { "io.insert-koin:koin-android:$KOIN_CORE_VERSION" }
 }

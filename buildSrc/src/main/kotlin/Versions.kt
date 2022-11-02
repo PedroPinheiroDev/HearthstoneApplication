@@ -8,4 +8,6 @@ object Versions {
     const val TEST_JUNIT_VERSION = "1.1.3"
     const val ESPRESSO_VERSION = "3.4.0"
     const val RETROFIT_VERSION = "2.9.0"
+    const val KOIN_CORE_VERSION = "3.1.5"
+    const val KOIN_ANDROID_VERSION = "3.2.0"
 }

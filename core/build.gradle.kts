@@ -1,0 +1,50 @@
+plugins {
+    id("com.android.library")
+    id("org.jetbrains.kotlin.android")
+}
+
+android {
+    namespace = "com.pedro.core"
+    compileSdk = Config.COMPILE_SDK_VERSION
+
+    defaultConfig {
+        minSdk = Config.MIN_SDK_VERSION
+
+        testInstrumentationRunner = Config.TEST_INSTRUMENTATION_RUNNER
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildTypes {
+        getByName("release") {
+            isMinifyEnabled = true
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = Config.JVM_TARGET
+    }
+
+    buildFeatures {
+        compose = true
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion = Config.KOTLIN_COMPILER_EXTENSION_VERSION
+    }
+}
+
+dependencies {
+    Depends.run {
+        retrofit.let(::api)
+        gson.let(::api)
+        koin_core.let(::api)
+        koin_android.let(::api)
+        junit.let(::testImplementation)
+        test_junit.let(::androidTestImplementation)
+    }
+}
