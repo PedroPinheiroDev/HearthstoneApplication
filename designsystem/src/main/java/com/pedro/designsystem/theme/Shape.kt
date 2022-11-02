@@ -1,4 +1,4 @@
-package com.pedro.hearthstoneapplication.ui.theme
+package com.pedro.designsystem.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes
