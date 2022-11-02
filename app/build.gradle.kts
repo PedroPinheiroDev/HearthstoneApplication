@@ -44,6 +44,8 @@ android {
 
 dependencies {
     implementation(project(":designsystem"))
+    implementation(project(":onboarding"))
+
     Depends.run {
         core_ktx.let(::implementation)
         lifecycle_runtime.let(::implementation)
