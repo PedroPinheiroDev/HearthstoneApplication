@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = Config.NAMESPACE
+    namespace = "designsystem"
     compileSdk = Config.COMPILE_SDK_VERSION
 
     defaultConfig {
