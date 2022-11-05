@@ -18,6 +18,17 @@ android {
         getByName("release") {
             isMinifyEnabled = true
         }
+
+        getByName("debug") {
+            buildConfigField("String", "KEY", "\"X-RapidAPI-Key\"")
+            buildConfigField(
+                "String",
+                "KEY_VALUE",
+                "\"b7c737731bmsh5ed2c0a3cfa12aap16f360jsn117616299d3e\""
+            )
+            buildConfigField("String", "HOST", "\"X-RapidAPI-Host\"")
+            buildConfigField("String", "HOST_VALUE", "\"omgvamp-hearthstone-v1.p.rapidapi.com\"")
+        }
     }
 
     compileOptions {
@@ -41,9 +52,17 @@ android {
 dependencies {
     Depends.run {
         retrofit.let(::api)
+        coil.let(::api)
+        okhttp3.let(::api)
+        lifecycle_viewmodel.let(::api)
+        lifecycle_runtime.let(::api)
+        lifecycle_compose.let(::api)
         gson.let(::api)
         koin_core.let(::api)
         koin_android.let(::api)
+        koin_compose.let(::api)
+        coroutines_android.let(::api)
+        coroutines_core.let(::api)
         junit.let(::testImplementation)
         test_junit.let(::androidTestImplementation)
     }

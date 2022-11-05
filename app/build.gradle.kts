@@ -35,6 +35,7 @@ android {
 
     buildFeatures {
         compose = true
+        buildConfig = true
     }
 
     composeOptions {
@@ -45,6 +46,9 @@ android {
 dependencies {
     implementation(project(":designsystem"))
     implementation(project(":onboarding"))
+    implementation(project(":cards_list"))
+    implementation(project(":core"))
+    implementation(project(":cards_details"))
 
     Depends.run {
         core_ktx.let(::implementation)
@@ -53,6 +57,7 @@ dependencies {
         compose_ui.let(::implementation)
         compose_ui_tooling_preview.let(::implementation)
         compose_material.let(::implementation)
+        compose_navigation.let(::implementation)
         junit.let(::testImplementation)
         test_junit.let(::androidTestImplementation)
         espresso.let(::androidTestImplementation)

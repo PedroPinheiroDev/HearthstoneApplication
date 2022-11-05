@@ -39,6 +39,9 @@ android {
 }
 
 dependencies {
+    implementation(project(":core"))
+    implementation(project(":designsystem"))
+
     Depends.run {
         compose_ui.let(::implementation)
         compose_ui_tooling_preview.let(::implementation)
