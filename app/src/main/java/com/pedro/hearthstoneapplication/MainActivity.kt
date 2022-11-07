@@ -14,7 +14,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.pedro.cards_details.presentation.screen.CardsDetailsScreen
-import com.pedro.cards_list.presentation.screen.CardsScreen
+import com.pedro.cards_list.presentation.screen.CardsListScreen
 import com.pedro.designsystem.theme.HearthstoneApplicationTheme
 import com.pedro.onboarding.SplashScreen
 
@@ -43,7 +43,7 @@ fun Navigation() {
         }
 
         composable("cards_screen") {
-            CardsScreen {
+            CardsListScreen {
                 navController.navigate("card_detail_screen/$it")
             }
         }

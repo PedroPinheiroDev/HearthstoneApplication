@@ -1,3 +1,4 @@
+
 import Versions.ACTIVITY_COMPOSE_VERSION
 import Versions.COMPOSE_MATERIAL_VERSION
 import Versions.COMPOSE_UI_VERSION
@@ -15,6 +16,7 @@ import Versions.LIFECYCLE_COMPOSE_VERSION
 import Versions.COIL_VERSION
 import Versions.OKHTTP_VERSION
 import Versions.COMPOSE_NAVIGATION_VERSION
+import Versions.MOCKK_VERSION
 
 object Depends {
     val core_ktx by lazy { "androidx.core:core-ktx:${CORE_KTX_VERSION}" }
@@ -41,4 +43,6 @@ object Depends {
     val coroutines_core by lazy { "org.jetbrains.kotlinx:kotlinx-coroutines-core:$COROUTINES_CORE_VERSION" }
     val coil by lazy { "io.coil-kt:coil-compose:$COIL_VERSION" }
     val okhttp3 by lazy { "com.squareup.okhttp3:logging-interceptor:$OKHTTP_VERSION" }
+    val mockk_android by lazy { "io.mockk:mockk-android:$MOCKK_VERSION" }
+    val coroutines_test by lazy { "org.jetbrains.kotlinx:kotlinx-coroutines-test:$COROUTINES_ANDROID_VERSION" }
 }

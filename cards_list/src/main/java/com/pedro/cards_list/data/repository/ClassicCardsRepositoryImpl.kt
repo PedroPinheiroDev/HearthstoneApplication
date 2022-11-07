@@ -11,7 +11,7 @@ class ClassicCardsRepositoryImpl(
 ) : ClassicCardsRepository {
     override suspend fun getAllCards(): Result<List<CardsListModel>> {
         return runCatching {
-            val response = service.getAllCards().body()
+            val response = service.getAllCards()?.body()
             response?.toDomainModel() ?: defaultCardList
         }
     }

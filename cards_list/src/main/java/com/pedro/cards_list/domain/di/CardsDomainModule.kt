@@ -1,12 +1,12 @@
 package com.pedro.cards_list.domain.di
 
-import com.pedro.cards_list.domain.usecase.GetAllCardsUseCase
-import com.pedro.cards_list.domain.usecase.GetAllCardsUseCaseImpl
+import com.pedro.cards_list.domain.usecase.GetClassicCardsUseCase
+import com.pedro.cards_list.domain.usecase.GetClassicCardsUseCaseImpl
 import org.koin.dsl.module
 
 val cardsDomainModule = module {
-    factory<GetAllCardsUseCase> {
-        GetAllCardsUseCaseImpl(
+    factory<GetClassicCardsUseCase> {
+        GetClassicCardsUseCaseImpl(
             get()
         )
     }

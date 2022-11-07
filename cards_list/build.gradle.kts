@@ -48,6 +48,8 @@ dependencies {
         compose_material.let(::implementation)
         retrofit.let(::implementation)
         junit.let(::testImplementation)
+        mockk_android.let(::testImplementation)
+        coroutines_test.let(::testImplementation)
         test_junit.let(::androidTestImplementation)
     }
 }

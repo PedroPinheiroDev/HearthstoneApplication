@@ -6,13 +6,13 @@ import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
-interface GetAllCardsUseCase {
+interface GetClassicCardsUseCase {
     suspend operator fun invoke(dispatcher: CoroutineDispatcher = Dispatchers.IO): Result<List<CardsListModel>>
 }
 
-class GetAllCardsUseCaseImpl(
+class GetClassicCardsUseCaseImpl(
     private val repository: ClassicCardsRepository
-) : GetAllCardsUseCase {
+) : GetClassicCardsUseCase {
     override suspend fun invoke(dispatcher: CoroutineDispatcher): Result<List<CardsListModel>> {
         return withContext(Dispatchers.IO) {
             repository.getAllCards()

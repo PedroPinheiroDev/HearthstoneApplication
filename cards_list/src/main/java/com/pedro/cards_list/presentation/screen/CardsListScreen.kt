@@ -37,7 +37,7 @@ import com.pedro.designsystem.components.CustomDialog
 import org.koin.androidx.compose.getViewModel
 
 @Composable
-fun CardsScreen(
+fun CardsListScreen(
     viewModel: CardsListViewModel = getViewModel(),
     onItemCLick: (String) -> Unit
 ) {

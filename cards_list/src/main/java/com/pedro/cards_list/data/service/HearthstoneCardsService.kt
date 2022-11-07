@@ -7,5 +7,5 @@ import retrofit2.http.GET
 interface HearthstoneCardsService {
 
     @GET("cards")
-    suspend fun getAllCards(): Response<CardsDTO>
+    suspend fun getAllCards(): Response<CardsDTO>?
 }

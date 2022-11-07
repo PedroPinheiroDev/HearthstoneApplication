@@ -16,4 +16,5 @@ object Versions {
     const val COROUTINES_CORE_VERSION = "1.5.0"
     const val COIL_VERSION = "2.2.2"
     const val OKHTTP_VERSION = "4.10.0"
+    const val MOCKK_VERSION = "1.13.2"
 }
