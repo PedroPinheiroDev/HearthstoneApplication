@@ -40,7 +40,7 @@ fun SplashScreen(onDone: () -> Unit = {}) {
         modifier = Modifier.fillMaxSize()
     ) {
         Image(
-            painter = painterResource(id = R.drawable.hearthstone_logo),
+            painter = painterResource(id = R.drawable.logo1),
             contentDescription = "Logo",
             modifier = Modifier.scale(scale.value)
         )

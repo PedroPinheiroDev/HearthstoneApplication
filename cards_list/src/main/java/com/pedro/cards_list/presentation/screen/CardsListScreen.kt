@@ -52,7 +52,7 @@ fun CardsListScreen(
             horizontalArrangement = Arrangement.End
         ) {
             Image(
-                painter = painterResource(id = R.drawable.retry),
+                painter = painterResource(id = R.drawable.retry1),
                 contentDescription = "retry",
                 modifier = Modifier
                     .clickable { viewModel.onEvent(CardsListScreenEvent.OnRetry) }
